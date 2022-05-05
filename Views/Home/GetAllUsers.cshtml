@@ -1,0 +1,22 @@
+﻿@using AssignmentDay6MvcApp.Models
+
+@model System.Collections.Generic.IEnumerable<User>
+
+
+@{
+    ViewBag.Title = "GetAllUsers";
+}
+
+<h2>GetAllUsers</h2>
+
+<table width="50%">
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td align="center">@user.UserName</td>
+            <td align="center">@user.Password</td>
+        </tr>
+    }
+</table>
+
+
